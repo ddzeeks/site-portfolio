@@ -1,20 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <meta name="description" content="Portfólio de [Seu Nome] - desenvolvedor(a) web">
+
+    <title>Site Portfolio</title>
 
     <!-- Conectando e configurando o Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <title>Site Portfolio</title>
+    <!-- CSS depois do Bootstrap, para poder sobrescrever estilos -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
 
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Home</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME/INTRODUÇÃO -->
+        <section id="home" class="py-5 text-center">
+            <div class="container">
+                <!-- Troque o src pela sua foto quando tiver (ex: img/foto.jpg) -->
+                <img src="img/perfil.png"
+                     alt="Foto de Daniel Campos"
+                     class="rounded-circle img-fluid mb-4"
+                     width="200" height="200">
+
+                <h1 class="display-5 fw-bold">Olá, sou o Daniel</h1>
+                <p class="lead text-secondary">Estudante</p>
+
+                <p class="mx-auto" style="max-width: 600px;">
+                    Sou estudante do curso de Ciências da Computação, apaixonado por tecnologia e programação em geral.
+                    Estou sempre em busca de novos desafios e, principalmente, minha primeira oportunidade para demonstrar e aprimorar
+                    minhas habilidades e contribuir com projetos inovadores no mercado de trabalho.  
+                </p>
+
+                <div class="d-flex justify-content-center gap-2 mt-4">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contato" class="btn btn-outline-secondary">Entrar em contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="mb-4">Sobre mim</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p>
+                            <strong>Minha história:</strong> <br> Tive acesso ao meu primeiro computador bem cedo, com apenas 6 anos.
+                            Daí para frente a paixão foi naturalmente se desenvolvendo. Ao longo dos anos aprendi a trocar peças,
+                            instalar sistemas, realizar manutenções, e eventualmente comecei a me interessar por programação.
+                            <br> Passei a criar pequenos jogos como hobby, até que finalmente decidi estudar formalmente e entrar em um curso relacionado.
+                            Comecei em Jogos Digitais, mas logo percebi que meu interesse não abordava somente joguinhos ou projetos de entretenimento,
+                            mas sim o desenvolvimento de projetos de software em geral, e por isso migrei para Ciências da Computação.
+                            <br> Durante essa caminhada tive contato com diversas linguagens de programação, como Lua, Python, C#, C e C++, e metodologias de desenvolvimento.
+                            Também aprimorei minhas habilidades com ferramentas como Git, GitHub e VS Code, além de aprender a trabalhar em equipe e a me comunicar de forma eficaz.
+                            No momento estou aprendendo a consolidar minhas habilidades com IA, pois entendo o potencial que ela tem para simplificar e otimizar processos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Habilidades</h2>
+
+                <div class="row g-4">
+                    <!-- Grupo 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="h5">Front-end</h3>
+                        <ul class="list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="h5">Back-end</h3>
+                        <ul class="list-unstyled">
+                            <li>Lua</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>C</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="h5">Ferramentas</h3>
+                        <ul class="list-unstyled">
+                            <li>Git e GitHub</li>
+                            <li>VS Code</li>
+                            <li>Power BI Básico</li>
+                            <li>Excel Básico</li>
+                            <li>Photoshop/Pixlr</li>
+                            <li>DaVinci Resolve</li>
+                        </ul>
+                    </div>
+
+                    <!-- Grupo 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <h3 class="h5">Outras</h3>
+                        <ul class="list-unstyled">
+                            <li>Inglês Avançado</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Comunicação</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="mb-4">Projetos</h2>
+
+                <div class="row g-4">
+                    <!-- Copie este bloco para cada novo projeto -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/600x350?text=Projeto" class="card-img-top" alt="Captura de tela do projeto">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Site Portfólio</h3>
+                                <p class="card-text">Meu primeiro projeto: este próprio site, feito com HTML, CSS, Bootstrap e assistência por IA (Claude Code/Copilot).</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="https://github.com/seu-usuario/seu-repositorio" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Ver no GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Contato</h2>
+                <p>Vamos conversar? Me encontre nos canais abaixo:</p>
+
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="mailto:dantcam40@gmail.com">dantcam40@gmail.com</a></li>
+                    <li class="mb-2"><a href="https://github.com/ddzeeks" target="_blank" rel="noopener">GitHub</a></li>
+                    <li class="mb-2"><a href="https://www.linkedin.com/in/daniel-campos-65b890349/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="py-4 text-center text-secondary border-top">
+        <div class="container">
+            <small>&copy; 2026 Daniel Campos. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Scripts no fim do body: o HTML carrega primeiro, os scripts depois -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
