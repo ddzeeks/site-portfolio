@@ -1,6 +1,6 @@
 # Site Portfólio
 
-Site de portfólio pessoal de **Daniel Campos**, estudante de Ciências da Computação. Este é o meu primeiro projeto no GitHub: uma página única, responsiva e estática, que apresenta quem eu sou, minhas habilidades, meus projetos e como entrar em contato.
+Este é o meu primeiro projeto no GitHub: uma página única, responsiva e estática, que apresenta quem eu sou, minhas habilidades, meus projetos e como entrar em contato.
 
 ## Funcionalidades
 
@@ -69,9 +69,8 @@ O projeto não precisa de instalação nem de build.
 
 ## Próximos passos
 
-- Publicar o site com GitHub Pages.
-- Adicionar capturas de tela aos cards de projetos.
 - Incluir novos projetos conforme forem concluídos.
+- Adicionar capturas de tela aos cards de projetos.
 
 ## Contato
 
