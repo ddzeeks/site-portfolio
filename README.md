@@ -1,4 +1,4 @@
-# Site Portfólio
+# Site Portfolio
 
 Este é o meu primeiro projeto no GitHub: uma página única, responsiva e estática, que apresenta quem eu sou, minhas habilidades, meus projetos e como entrar em contato.
 
